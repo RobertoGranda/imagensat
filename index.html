@@ -6,15 +6,14 @@
 </head>
 <body>
 
-  <div class="img-compare-container" id="compare">
-    <div class="img-compare">
-      <img class="bottom" src="28abr.png" alt="Before">
-      <img class="top"    src="29abr.png" alt="After" id="topImage">
-      <div class="slider" id="slider" style="left: 0;"></div>
-    </div>
-  </div>
+  <!-- the only markup you need: -->
+  <div 
+    class="image-compare-widget" 
+    data-before="28abr.png" 
+    data-after="29abr.png"
+    style="width:1600px; height:1080px;"
+  ></div>
 
   <script src="https://robertogranda.github.io/imagensat/compare-widget.js" defer></script>
-
 </body>
 </html>
