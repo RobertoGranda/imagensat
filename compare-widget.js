@@ -2,7 +2,7 @@
     // Inject CSS once
     const css = `
       .image-compare-widget { position: relative; overflow: hidden; cursor: ew-resize; }
-      .image-compare-widget img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; user-select:none; }
+      .image-compare-widget img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain; user-select:none; }
       .compare-top { clip-path:polygon(0 0,0 0,0 100%,0 100%); z-index:2; }
       .compare-bottom { z-index:1; }
       .compare-slider { position:absolute; top:0; width:5px; height:100%; background:#fff; z-index:3; cursor:ew-resize; }
