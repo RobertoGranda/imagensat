@@ -3,71 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Image Reveal Slider</title>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .img-compare-container {
-      position: relative;
-      width: 1600px;
-      height: 1080px;
-      overflow: hidden;
-      cursor: ew-resize;
-    }
-
-    /* bottom image always fully visible */
-    .img-compare img.bottom {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      pointer-events: none;
-    }
-
-    /* top image is clipped via clip-path */
-    .img-compare img.top {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      pointer-events: none;
-      clip-path: polygon(0 0,0 0,0 100%,0 100%);
-    }
-
-    .slider {
-      position: absolute;
-      top: 0;
-      width: 4px;
-      height: 100%;
-      background-color: #fff;
-      z-index: 2;
-      cursor: ew-resize;
-      transition: background 0.2s;
-      pointer-events: auto;
-    }
-    .slider:hover {
-      background-color: red;
-    }
-
-    /* disable selection & dragging */
-    .img-compare-container,
-    .img-compare-container * {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-user-drag: none;
-    }
-    .img-compare-container img {
-      pointer-events: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -79,8 +14,7 @@
     </div>
   </div>
 
-  <link rel="stylesheet" href="https://<your-username>.github.io/image-compare-slider/compare-widget.css">
-  <script src="https://<your-username>.github.io/image-compare-slider/compare-widget.js" defer></script>
+  <script src="https://robertogranda.github.io/imagensat/compare-widget.js" defer></script>
 
 </body>
 </html>
